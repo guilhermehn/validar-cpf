@@ -2,6 +2,7 @@ function validarCPF (cpf) {
   var j = -1
     , add
     , i
+    , rev
 
   cpf = cpf.replace(/[^\d]+/g, '');
 
