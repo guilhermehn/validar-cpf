@@ -1,6 +1,6 @@
 {
   "name": "validar-cpf",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Validador de CPF",
   "main": "index.js",
   "scripts": {
