@@ -1,4 +1,6 @@
 function validarCPF (cpf) {
+  'use strict';
+
   var j = -1
     , add
     , i
@@ -6,7 +8,7 @@ function validarCPF (cpf) {
 
   cpf = cpf.replace(/[^\d]+/g, '');
 
-  if (cpf === '' || cpf.length != 11 || /^(\d)\1{10}$/.test(cpf)) {
+  if (cpf === '' || cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
     return false
   }
 

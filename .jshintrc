@@ -1,0 +1,10 @@
+{
+  "eqeqeq": true,
+  "asi": true,
+  "globalstrict": true,
+  "laxcomma": true,
+  "laxbreak": true,
+  "globals": {
+    "module": true
+  }
+}
