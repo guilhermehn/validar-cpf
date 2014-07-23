@@ -14,9 +14,10 @@ function validarCPF (cpf) {
 
   while (++j < 2) {
     add = 0
+    i = -1
 
-    for (i = 0; i < (9 + j);) {
-      add += (cpf[i] >>> 0) * ((10 + j) - i++)
+    while (++i < (9 + j)) {
+      add += (cpf[i] >>> 0) * ((10 + j) - i)
     }
 
     rev = 11 - (add % 11)

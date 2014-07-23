@@ -4,10 +4,23 @@
   "description": "Validador de CPF",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guilhermehn/validar-cpf.git"
+  },
+  "keywords": [
+    "cpf",
+    "validar",
+    "validador"
+  ],
+  "author": "Guilherme Nagatomo",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermehn/validar-cpf/issues"
+  },
+  "homepage": "https://github.com/guilhermehn/gerar-cpf",
   "devDependencies": {
     "gerar-cpf": "^1.1.0"
   }
