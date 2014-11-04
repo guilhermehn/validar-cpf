@@ -16,4 +16,20 @@ describe('validarCpf', function () {
       return validarCpf(cpf);
     }));
   });
+
+  it('should ignore non-numeric characters', function () {
+    var cpf = gerarCpf(true);
+    assert(validarCpf(cpf));
+  });
+
+  it('should ignore any type of mask', function () {
+    var cpf = gerarCpf('x-x-x-x-x-x-x-x-x-x-x');
+    assert(validarCpf(cpf));
+
+    cpf = gerarCpf('<><><><><><><><><><><>', '<>');
+    assert(validarCpf(cpf));
+
+    cpf = gerarCpf('___.___.___-__', '_');
+    assert(validarCpf(cpf));
+  });
 });
