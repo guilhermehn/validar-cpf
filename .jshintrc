@@ -1,7 +1,4 @@
 {
   "eqeqeq": true,
-  "globalstrict": true,
-  "globals": {
-    "module": true
-  }
+  "node": true
 }
