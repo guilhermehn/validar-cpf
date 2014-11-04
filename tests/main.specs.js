@@ -1,13 +1,19 @@
-var validarCpf = require('../')
-  , assert = require('assert')
-  , gerarCpf = require('gerar-cpf')
+var validarCpf = require('../');
+var assert = require('assert');
+var gerarCpf = require('gerar-cpf');
 
 describe('validarCpf', function () {
-  var i = -1
+  var i = -1;
 
-  while (++i < 100) {
-    it('should validate cpf', function () {
-      assert(validarCpf(gerarCpf()))
-    })
-  }
-})
+  it('should validate cpf', function () {
+    var cpfs = [];
+
+    while (++i < 100) {
+      cpfs[i] = gerarCpf();
+    }
+
+    assert(cpfs.every(function (cpf) {
+      return validarCpf(cpf);
+    }));
+  });
+});
