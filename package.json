@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
+    "eslint": "^4.11.0",
     "gerar-cpf": "^1.1.0",
     "gulp": "^3.8.10",
     "gulp-jscs": "^1.3.0",
