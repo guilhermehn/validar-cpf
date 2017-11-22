@@ -23,7 +23,11 @@
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
     "eslint": "^4.11.0",
-    "gerar-cpf": "^1.1.0",
-    "mocha": "^2.0.1"
-  }
+    "gerar-cpf": "^2.0.0",
+    "mocha": "^4.0.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
