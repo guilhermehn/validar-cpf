@@ -1,17 +1,19 @@
 # validar-cpf
 
-Validador de CPF para node
+> Validador de CPF em javascript
 
 ## Instalar
-`npm install validar-cpf`
+
+`npm install validar-cpf -S`
 
 ## Uso
 
-```javascript
-var validarCpf = require('validar-cpf')
+```js
+const validarCpf = require('validar-cpf')
 
 validarCpf('12345678987') // false
 ```
 
 ## Licensa
+
 MIT
