@@ -1,37 +1,33 @@
-function validarCPF (cpf) {
-  'use strict';
+'use strict'
 
-  var j = -1;
-  var i;
-  var add;
-  var rev;
+const validarCpf = input => {
+	const cpf = input.replace(/\D/g, '')
 
-  cpf = cpf.replace(/[^\d]+/g, '');
+	if (cpf === '' || cpf.length !== 11 || !/^\d{11}$/.test(cpf)) {
+		return false
+	}
 
-  if (cpf === '' || cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
-    return false;
-  }
+	const digits = cpf.split('').map(x => parseInt(x))
 
-  while (++j < 2) {
-    add = 0;
-    i = -1;
+	for (let j = 0; j < 2; j++) {
+		let sum = 0
 
-    while (++i < (9 + j)) {
-      add += (cpf[i] >>> 0) * ((10 + j) - i);
-    }
+		for (let i = 0; i < 9 + j; i++) {
+			sum += digits[i] * (10 + j - i)
+		}
 
-    rev = 11 - (add % 11);
+		let checkDigit = 11 - sum % 11
 
-    if (rev === 10 || rev === 11) {
-      rev = 0;
-    }
+		if (checkDigit === 10 || checkDigit === 11) {
+			checkDigit = 0
+		}
 
-    if (rev !== cpf[9 + j] >>> 0) {
-      return false;
-    }
-  }
+		if (checkDigit !== digits[9 + j]) {
+			return false
+		}
+	}
 
-  return true;
+	return true
 }
 
-module.exports = validarCPF;
+module.exports = validarCpf
