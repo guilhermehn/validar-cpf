@@ -1,5 +1,7 @@
 # validar-cpf
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/guilhermehn/validar-cpf.svg)](https://greenkeeper.io/)
+
 > Validador de CPF em javascript
 
 [![Build Status](https://travis-ci.org/guilhermehn/validar-cpf.svg?branch=master)](https://travis-ci.org/guilhermehn/validar-cpf)
