@@ -4,7 +4,7 @@
   "description": "Validador de CPF",
   "main": "index.js",
   "scripts": {
-    "docs": "jsdoc2md index.js > API_REFERENCE.md",
+    "docs": "jsdoc2md index.js > API_REFERENCE.md && git add API_REFERENCE.md",
     "pretest": "eslint .",
     "test": "jest --coverage --coverageReporters=text-lcov",
     "coveralls": "npm test | coveralls"
@@ -31,12 +31,22 @@
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-prettier": "^3.0.1",
     "gerar-cpf": "^2.0.2",
+    "husky": "^1.3.1",
     "jest": "^24.1.0",
     "jsdoc-to-markdown": "^4.0.1",
+    "lint-staged": "^8.1.5",
     "prettier": "^1.16.4"
   },
   "directories": {
     "test": "test"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "lint-staged": {
+    "*": "npm test"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged && npm run docs"
+    }
+  }
 }
