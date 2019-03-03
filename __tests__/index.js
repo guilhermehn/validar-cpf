@@ -19,7 +19,7 @@ describe('validarCpf', () => {
 	});
 
 	it('should return false if input have less than 11 characters', () => {
-		expect(validarCpf('1234567890')).toBe(true);
+		expect(validarCpf('1234567890')).toBe(false);
 	});
 
 	it('should return false if input have more than 11 characters', () => {
