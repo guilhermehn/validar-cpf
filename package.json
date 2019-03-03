@@ -6,8 +6,8 @@
   "scripts": {
     "docs": "jsdoc2md index.js > API_REFERENCE.md && git add API_REFERENCE.md",
     "pretest": "eslint .",
-    "test": "jest --coverage --coverageReporters=text-lcov",
-    "coveralls": "npm test | coveralls"
+    "test": "jest --coverage",
+    "coveralls": "npm test --  --coverageReporters=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
