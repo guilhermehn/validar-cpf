@@ -8,6 +8,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/guilhermehn/validar-cpf/badge.svg?branch=master)](https://coveralls.io/github/guilhermehn/validar-cpf?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/guilhermehn/validar-cpf/badge.svg)](https://snyk.io/test/github/guilhermehn/validar-cpf)
 
+[![Install size](https://badgen.net/packagephobia/install/validar-cpf)](https://badgen.net/packagephobia/install/validar-cpf)
+[![Minified size](https://badgen.net/bundlephobia/min/validar-cpf)](https://badgen.net/bundlephobia/min/validar-cpf)
+[![Minified + gzip size](https://badgen.net/bundlephobia/minzip/validar-cpf)](https://badgen.net/bundlephobia/minzip/validar-cpf)
+
 ## Instalar
 
 `npm install validar-cpf -S`
