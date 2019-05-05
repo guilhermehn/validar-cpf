@@ -1,5 +1,7 @@
 'use strict';
 
+const isRepeatingNumber = str => /^(\d)(\1){10}$/.test(str);
+
 /**
  * Valida um número de CPF baseado no algorítmo "módulo 11"
  * @param {String} input - Número de CPF a ser testado
@@ -11,7 +13,12 @@
 const validarCpf = input => {
 	const cpf = input.replace(/\D/g, '');
 
-	if (cpf === '' || cpf.length !== 11 || !/^\d{11}$/.test(cpf)) {
+	if (
+		cpf === '' ||
+		cpf.length !== 11 ||
+		!/^\d{11}$/.test(cpf) ||
+		isRepeatingNumber(cpf)
+	) {
 		return false;
 	}
 

@@ -35,4 +35,12 @@ describe('validarCpf', () => {
 		expect(validarCpf(gerarCpf('<><><><><><><><><><><>', '<>'))).toBe(true);
 		expect(validarCpf(gerarCpf('___.___.___-__', '_'))).toBe(true);
 	});
+
+	it('should consider repeating numbers as invalid', () => {
+		expect(validarCpf('11111111111')).toBe(false);
+		expect(validarCpf('22222222222')).toBe(false);
+		expect(validarCpf('33333333333')).toBe(false);
+		expect(validarCpf('44444444444')).toBe(false);
+		expect(validarCpf('55555555555')).toBe(false);
+	});
 });
