@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/guilhermehn/validar-cpf.git"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "cpf",
     "validar",
