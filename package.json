@@ -29,16 +29,16 @@
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
     "coveralls": "^3.0.3",
-    "eslint": "^5.15.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-jest": "^22.6.3",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-prettier": "^3.1.0",
     "gerar-cpf": "^2.0.3",
-    "husky": "^2.0.0",
-    "jest": "^24.1.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
     "jsdoc-to-markdown": "^5.0.0",
-    "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4"
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1"
   },
   "directories": {
     "test": "test"
