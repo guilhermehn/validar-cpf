@@ -44,7 +44,7 @@
   },
   "dependencies": {},
   "lint-staged": {
-    "*": "npm test"
+    "*.js": "npm test"
   },
   "husky": {
     "hooks": {
