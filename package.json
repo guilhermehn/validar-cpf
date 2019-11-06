@@ -38,9 +38,6 @@
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },
-  "directories": {
-    "test": "test"
-  },
   "lint-staged": {
     "*.js": "npm test"
   },
