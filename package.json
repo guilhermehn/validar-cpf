@@ -38,8 +38,25 @@
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "jest": true
+    },
+    "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+    "rules": {
+      "indent": ["error", "tab"],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"]
+    }
+  },
+  "prettier": {
+    "useTabs": true,
+    "singleQuote": true
+  },
   "lint-staged": {
-    "*.js": "npm test"
+    "*.js": ["eslint --fix", "prettier --write", "npm test"]
   },
   "husky": {
     "hooks": {
