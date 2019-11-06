@@ -1,6 +1,6 @@
 'use strict';
 
-const validarCpf = require('..');
+const validarCpf = require('.');
 const gerarCpf = require('gerar-cpf');
 
 describe('validarCpf', () => {
