@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-jest": "^23.0.2",
     "eslint-plugin-prettier": "^3.1.1",
