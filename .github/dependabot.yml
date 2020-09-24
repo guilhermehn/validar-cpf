@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - ">= 7.a"
+    - "< 8"
+  - dependency-name: jest
+    versions:
+    - ">= 26.a"
+    - "< 27"
+  - dependency-name: prettier
+    versions:
+    - ">= 2.a"
+    - "< 3"
