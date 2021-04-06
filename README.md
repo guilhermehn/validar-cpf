@@ -6,7 +6,6 @@
 [![npm version](https://badge.fury.io/js/validar-cpf.svg)](http://badge.fury.io/js/validar-cpf)
 [![Known Vulnerabilities](https://snyk.io/test/github/guilhermehn/validar-cpf/badge.svg)](https://snyk.io/test/github/guilhermehn/validar-cpf)
 
-
 ## Instalar
 
 `npm install validar-cpf -S`
