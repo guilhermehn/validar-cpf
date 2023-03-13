@@ -27,14 +27,12 @@
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
     "chai": "^4.3.7",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint": "^8.36.0",
     "gerar-cpf": "^2.0.3",
     "husky": "^4.0.1",
     "lint-staged": "^13.1.0",
     "mocha": "^10.2.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.8.4"
   },
   "eslintConfig": {
     "env": {
@@ -43,23 +41,8 @@
       "mocha": true
     },
     "extends": [
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "rules": {
-      "indent": [
-        "error",
-        "tab"
-      ],
-      "linebreak-style": [
-        "error",
-        "unix"
-      ],
-      "quotes": [
-        "error",
-        "single"
-      ]
-    }
+      "eslint:recommended"
+    ]
   },
   "prettier": {
     "useTabs": true,
