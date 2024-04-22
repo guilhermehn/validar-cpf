@@ -28,7 +28,7 @@
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
     "chai": "^4.3.7",
-    "eslint": "^8.36.0",
+    "eslint": "^9.1.0",
     "gerar-cpf": "^2.0.3",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
