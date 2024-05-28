@@ -1,5 +1,3 @@
-'use strict';
-
 const isRepeatingNumber = (str) => /^(\d)(\1){10}$/.test(str);
 
 /**
@@ -22,7 +20,7 @@ const validarCpf = (input) => {
 		return false;
 	}
 
-	const digits = cpf.split('').map((x) => parseInt(x));
+	const digits = cpf.split('').map((x) => Number.parseInt(x));
 
 	for (let j = 0; j < 2; j++) {
 		let sum = 0;

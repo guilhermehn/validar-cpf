@@ -1,5 +1,3 @@
-'use strict';
-
 const validarCpf = require('..');
 const gerarCpf = require('gerar-cpf');
 const { expect } = require('chai');

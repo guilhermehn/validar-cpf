@@ -4,7 +4,7 @@
   "description": "Validador de CPF",
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint .",
+    "pretest": "biome check .",
     "test": "mocha",
     "prepare": "husky install"
   },
@@ -27,33 +27,16 @@
   },
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
     "chai": "^4.3.7",
-    "eslint": "^8.36.0",
     "gerar-cpf": "^2.0.3",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
-    "mocha": "^10.2.0",
-    "prettier": "^3.0.0"
-  },
-  "eslintConfig": {
-    "env": {
-      "commonjs": true,
-      "es6": true,
-      "mocha": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ]
-  },
-  "prettier": {
-    "useTabs": true,
-    "singleQuote": true
+    "mocha": "^10.2.0"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "npm t"
+    "*": [
+      "biome check --no-errors-on-unmatched --files-ignore-unknown=true"
     ]
   }
 }
