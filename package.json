@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "biome check .",
     "test": "node --test --experimental-test-coverage",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
     "gerar-cpf": "^2.0.3",
-    "husky": "^8.0.3",
+    "husky": "^9.0.11",
     "lint-staged": "^15.0.2"
   },
   "lint-staged": {
