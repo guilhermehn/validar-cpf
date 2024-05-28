@@ -1,8 +1,11 @@
+/**
+ * @param {String} str
+ */
 const isRepeatingNumber = (str) => /^(\d)(\1){10}$/.test(str);
 
 /**
- * Valida um número de CPF baseado no algorítmo "módulo 11"
- * @param {String} input - Número de CPF a ser testado
+ * Validates Brazilian CPF document number using the "módulo 11" algorithm
+ * @param {String} input - CPF number to be tested
  * @return {Boolean}
  * @example
  * const validarCpf = require('validar-cpf');
