@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "biome check .",
-    "test": "mocha",
+    "test": "node --test --experimental-test-coverage",
     "prepare": "husky install"
   },
   "repository": {
@@ -28,11 +28,9 @@
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "chai": "^4.3.7",
     "gerar-cpf": "^2.0.3",
     "husky": "^8.0.3",
-    "lint-staged": "^15.0.2",
-    "mocha": "^10.2.0"
+    "lint-staged": "^15.0.2"
   },
   "lint-staged": {
     "*": [
