@@ -11,7 +11,7 @@ const isRepeatingNumber = (str) => /^(\d)(\1){10}$/.test(str);
  * const validarCpf = require('validar-cpf');
  * console.log(validarCpf('12345678900'));
  */
-const validarCpf = (input) => {
+module.exports = function validarCpf(input) {
 	const cpf = input.replace(/\D/g, '');
 
 	if (
@@ -45,5 +45,3 @@ const validarCpf = (input) => {
 
 	return true;
 };
-
-module.exports = validarCpf;
