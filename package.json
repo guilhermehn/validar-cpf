@@ -13,7 +13,8 @@
     "url": "git+ssh://git@github.com/guilhermehn/validar-cpf.git"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "keywords": [
     "cpf",
