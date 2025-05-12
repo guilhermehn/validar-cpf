@@ -31,7 +31,7 @@
     "@biomejs/biome": "^1.7.3",
     "gerar-cpf": "^3.1.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.5"
+    "lint-staged": "^16.0.0"
   },
   "lint-staged": {
     "*": [
