@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/guilhermehn/validar-cpf",
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
+    "@biomejs/biome": "^2.0.4",
     "gerar-cpf": "^3.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^16.0.0"
